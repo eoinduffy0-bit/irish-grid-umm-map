@@ -1,0 +1,7 @@
+station_name,lat,lon,installed_mw,fuel
+Moneypoint,52.625,-9.352,915,Coal
+Huntstown,53.408,-6.359,343,Gas
+Poolbeg,53.343,-6.186,480,Gas
+Aghada,51.849,-8.229,445,Gas/Oil
+Whitegate,51.824,-8.243,445,Gas
+Tynagh,53.154,-8.377,400,Gas

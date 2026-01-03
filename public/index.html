@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Irish Generator Outages (UMM)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    #map { height: 100vh; width: 100vw; }
+    .legend {
+      position: absolute; top: 12px; right: 12px; z-index: 999;
+      background: white; padding: 10px 12px; border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      font-size: 14px;
+    }
+    .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; }
+    .online { background: #1f9d55; }
+    .partial { background: #d69e2e; }
+    .offline { background: #e53e3e; }
+    .ts { margin-top: 8px; color: #555; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="legend">
+    <div><span class="dot online"></span>Online</div>
+    <div><span class="dot partial"></span>Partial</div>
+    <div><span class="dot offline"></span>Offline</div>
+    <div class="ts" id="ts"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script>
+    const map = L.map("map").setView([53.4, -7.8], 7);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    function colorFor(status) {
+      if (status === "offline") return "#e53e3e";
+      if (status === "partial") return "#d69e2e";
+      return "#1f9d55";
+    }
+
+    let layer;
+
+    async function loadData() {
+      const res = await fetch("status.geojson?ts=" + Date.now());
+      const gj = await res.json();
+      document.getElementById("ts").textContent =
+        "Updated: " + (gj.generated_at_utc || "unknown") + " (UTC)";
+
+      if (layer) layer.remove();
+
+      layer = L.geoJSON(gj, {
+        pointToLayer: (feature, latlng) => {
+          const p = feature.properties;
+          return L.circleMarker(latlng, {
+            radius: 8,
+            color: "#111",
+            weight: 1,
+            fillColor: colorFor(p.status),
+            fillOpacity: 0.85
+          });
+        },
+        onEachFeature: (feature, l) => {
+          const p = feature.properties;
+          l.bindPopup(`
+            <b>${p.station}</b><br/>
+            Status: <b>${p.status}</b><br/>
+            Installed: ${p.installed_mw} MW<br/>
+            Unavailable: ${p.unavailable_mw} MW<br/>
+            Available: <b>${p.available_mw}</b> MW<br/>
+            ${p.fuel ? ("Fuel: " + p.fuel + "<br/>") : ""}
+          `);
+        }
+      }).addTo(map);
+    }
+
+    loadData();
+    setInterval(loadData, 15 * 60 * 1000);
+  </script>
+</body>
+</html>

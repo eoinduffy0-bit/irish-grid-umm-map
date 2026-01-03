@@ -1,0 +1,114 @@
+{
+  "type": "FeatureCollection",
+  "generated_at_utc": "2026-01-03T21:30:26.847424+00:00",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.352,
+          52.625
+        ]
+      },
+      "properties": {
+        "station": "Moneypoint",
+        "fuel": "Coal",
+        "installed_mw": 915.0,
+        "unavailable_mw": 0.0,
+        "available_mw": 915.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.359,
+          53.408
+        ]
+      },
+      "properties": {
+        "station": "Huntstown",
+        "fuel": "Gas",
+        "installed_mw": 343.0,
+        "unavailable_mw": 0.0,
+        "available_mw": 343.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.186,
+          53.343
+        ]
+      },
+      "properties": {
+        "station": "Poolbeg",
+        "fuel": "Gas",
+        "installed_mw": 480.0,
+        "unavailable_mw": 0.0,
+        "available_mw": 480.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.229,
+          51.849
+        ]
+      },
+      "properties": {
+        "station": "Aghada",
+        "fuel": "Gas/Oil",
+        "installed_mw": 445.0,
+        "unavailable_mw": 0.0,
+        "available_mw": 445.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.243,
+          51.824
+        ]
+      },
+      "properties": {
+        "station": "Whitegate",
+        "fuel": "Gas",
+        "installed_mw": 445.0,
+        "unavailable_mw": 0.0,
+        "available_mw": 445.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.377,
+          53.154
+        ]
+      },
+      "properties": {
+        "station": "Tynagh",
+        "fuel": "Gas",
+        "installed_mw": 400.0,
+        "unavailable_mw": 0.0,
+        "available_mw": 400.0,
+        "status": "online"
+      }
+    }
+  ]
+}
