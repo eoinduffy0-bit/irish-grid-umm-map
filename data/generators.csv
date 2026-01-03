@@ -1,8 +1,9 @@
-station_name,lat,lon,installed_mw,fuel
-Moneypoint,52.625,-9.352,915,Coal
-Huntstown,53.408,-6.359,343,Gas
-Poolbeg,53.343,-6.186,480,Gas
-Aghada,51.849,-8.229,445,Gas/Oil
-Whitegate,51.824,-8.243,445,Gas
-Tynagh,53.154,-8.377,400,Gas
-Dublin Bay,53.354,-6.130,415,Gas
+infrastructure,lat,lon,fuel
+Kilroot - GU_500823 (K2),54.7255,-5.7653,Gas
+Kilroot - GU_500822 (K1),54.7255,-5.7653,Gas
+Coolkeeragh - GU_500040 (C30),55.0438,-7.2487,Gas
+Ballylumford CCGT - GU_503720 (B31),54.8428,-5.7853,Gas
+Dublin Bay - GU_400500 (DB1),53.354,-6.130,Gas
+Moneypoint,52.625,-9.352,Coal
+Huntstown,53.408,-6.359,Gas
+
