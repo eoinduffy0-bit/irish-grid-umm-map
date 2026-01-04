@@ -1,7 +1,92 @@
 {
   "type": "FeatureCollection",
-  "generated_at_utc": "2026-01-03T21:48:15.401409+00:00",
+  "generated_at_utc": "2026-01-04T00:08:56.989582+00:00",
   "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7653,
+          54.7255
+        ]
+      },
+      "properties": {
+        "infrastructure": "Kilroot - GU_500823 (K2)",
+        "fuel": "Gas",
+        "available_mw": 0.0,
+        "unavailable_mw": 0.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7653,
+          54.7255
+        ]
+      },
+      "properties": {
+        "infrastructure": "Kilroot - GU_500822 (K1)",
+        "fuel": "Gas",
+        "available_mw": 0.0,
+        "unavailable_mw": 0.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.2487,
+          55.0438
+        ]
+      },
+      "properties": {
+        "infrastructure": "Coolkeeragh - GU_500040 (C30)",
+        "fuel": "Gas",
+        "available_mw": 0.0,
+        "unavailable_mw": 0.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7853,
+          54.8428
+        ]
+      },
+      "properties": {
+        "infrastructure": "Ballylumford CCGT - GU_503720 (B31)",
+        "fuel": "Gas",
+        "available_mw": 0.0,
+        "unavailable_mw": 0.0,
+        "status": "online"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.13,
+          53.354
+        ]
+      },
+      "properties": {
+        "infrastructure": "Dublin Bay - GU_400500 (DB1)",
+        "fuel": "Gas",
+        "available_mw": 0.0,
+        "unavailable_mw": 0.0,
+        "status": "online"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -12,11 +97,10 @@
         ]
       },
       "properties": {
-        "station": "Moneypoint",
+        "infrastructure": "Moneypoint",
         "fuel": "Coal",
-        "installed_mw": 915.0,
+        "available_mw": 0.0,
         "unavailable_mw": 0.0,
-        "available_mw": 915.0,
         "status": "online"
       }
     },
@@ -30,83 +114,10 @@
         ]
       },
       "properties": {
-        "station": "Huntstown",
+        "infrastructure": "Huntstown",
         "fuel": "Gas",
-        "installed_mw": 343.0,
+        "available_mw": 0.0,
         "unavailable_mw": 0.0,
-        "available_mw": 343.0,
-        "status": "online"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.186,
-          53.343
-        ]
-      },
-      "properties": {
-        "station": "Poolbeg",
-        "fuel": "Gas",
-        "installed_mw": 480.0,
-        "unavailable_mw": 0.0,
-        "available_mw": 480.0,
-        "status": "online"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -8.229,
-          51.849
-        ]
-      },
-      "properties": {
-        "station": "Aghada",
-        "fuel": "Gas/Oil",
-        "installed_mw": 445.0,
-        "unavailable_mw": 0.0,
-        "available_mw": 445.0,
-        "status": "online"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -8.243,
-          51.824
-        ]
-      },
-      "properties": {
-        "station": "Whitegate",
-        "fuel": "Gas",
-        "installed_mw": 445.0,
-        "unavailable_mw": 0.0,
-        "available_mw": 445.0,
-        "status": "online"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -8.377,
-          53.154
-        ]
-      },
-      "properties": {
-        "station": "Tynagh",
-        "fuel": "Gas",
-        "installed_mw": 400.0,
-        "unavailable_mw": 0.0,
-        "available_mw": 400.0,
         "status": "online"
       }
     }
