@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "generated_at_utc": "2026-01-13T19:57:14.034185+00:00",
+  "generated_at_utc": "2026-01-13T20:05:01.771353+00:00",
   "features": [
     {
       "type": "Feature",
@@ -48,9 +48,9 @@
       "properties": {
         "infrastructure": "Coolkeeragh - GU_500040 (C30)",
         "fuel": "Gas",
-        "available_mw": 0.0,
-        "unavailable_mw": 0.0,
-        "status": "online"
+        "available_mw": 370.0,
+        "unavailable_mw": 55.0,
+        "status": "partial"
       }
     },
     {
@@ -83,42 +83,8 @@
         "infrastructure": "Dublin Bay - GU_400500 (DB1)",
         "fuel": "Gas",
         "available_mw": 0.0,
-        "unavailable_mw": 0.0,
-        "status": "online"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.352,
-          52.625
-        ]
-      },
-      "properties": {
-        "infrastructure": "Moneypoint",
-        "fuel": "Coal",
-        "available_mw": 0.0,
-        "unavailable_mw": 0.0,
-        "status": "online"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.359,
-          53.408
-        ]
-      },
-      "properties": {
-        "infrastructure": "Huntstown",
-        "fuel": "Gas",
-        "available_mw": 0.0,
-        "unavailable_mw": 0.0,
-        "status": "online"
+        "unavailable_mw": 415.0,
+        "status": "offline"
       }
     }
   ]
