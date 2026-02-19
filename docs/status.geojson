@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "generated_at_utc": "2026-02-19T17:08:19.104321+00:00",
+  "generated_at_utc": "2026-02-19T17:58:45.546820+00:00",
   "features": [
     {
       "type": "Feature",
@@ -82,9 +82,9 @@
       "properties": {
         "infrastructure": "Dublin Bay - GU_400500 (DB1)",
         "fuel": "Gas",
-        "available_mw": 0.0,
-        "unavailable_mw": 0.0,
-        "status": "online"
+        "available_mw": 200.0,
+        "unavailable_mw": 215.0,
+        "status": "partial"
       }
     },
     {
