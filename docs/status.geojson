@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "generated_at_utc": "2026-06-25T21:53:43.420427+00:00",
+  "generated_at_utc": "2026-06-25T23:03:48.464250+00:00",
   "features": [
     {
       "type": "Feature",
@@ -49,8 +49,8 @@
         "infrastructure": "Coolkeeragh - GU_500040 (C30)",
         "fuel": "Gas",
         "available_mw": 0.0,
-        "unavailable_mw": 0.0,
-        "status": "online"
+        "unavailable_mw": 425.0,
+        "status": "offline"
       }
     },
     {
