@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "generated_at_utc": "2026-09-06T17:39:13.781031+00:00",
+  "generated_at_utc": "2026-09-06T19:28:03.482665+00:00",
   "features": [
     {
       "type": "Feature",
@@ -66,8 +66,8 @@
         "infrastructure": "Ballylumford CCGT - GU_503720 (B31)",
         "fuel": "Gas",
         "available_mw": 0.0,
-        "unavailable_mw": 247.0,
-        "status": "offline"
+        "unavailable_mw": 0.0,
+        "status": "online"
       }
     },
     {
